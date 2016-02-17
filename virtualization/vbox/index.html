@@ -15,7 +15,7 @@
 	<body>
 		<h1>iBrowser VirtualBox Appliance</h1>
         <h2>Verify Version</h2>
-        <br/><span class="thick">Compiled with Virtualbox 4.3.24</span>
+        <br/><span class="thick">Compiled with Virtualbox 5.0.14</span>
         <br/><span class="thick">Also install VirtualBox Extension Pack from <a href="https://www.virtualbox.org/wiki/Downloads">HERE</a></span>
 
 		<h2>Import</h2>
@@ -49,32 +49,27 @@
             <h3>Port Forward</h3>
             <img src="https://raw.githubusercontent.com/sauloal/introgressionbrowser/gh-pages/virtualization/vbox/08_network_port_forward.png"/>
             <br/><span class="thick">Verify that port 10000 is being forwarded</span>
+            <br/><span class="thick">If it shows a error, clear the Host IP and Guest IP values</span>
 
-                <h4>Shared Folder</h4>
-                <h3>Download Sample data</h3>
-                    <p>The data used in the iBrowser paper can be downloaded using <a class="strong" href="http://www.getsync.com/download">BitTorrent Sync</a> using the following read-only key: <b><a class="strong" href="https://link.getsync.com/#f=ibrowser_data&sz=46E9&s=O6566OWYA7PXFTFOPTP6YJSQMWAECO3A&i=C3HUG5U7E3WT6KWJFAA6GK25Z53HC3AYT&p=CC75HO3ZKY5UJAT5JR6ILHQLKI3XPEJZ">key</a></b>.</p>
-                    <img src="https://raw.githubusercontent.com/sauloal/introgressionbrowser/gh-pages/virtualization/vbox/09_01_btsync_add.png"/>
-                    <img src="https://raw.githubusercontent.com/sauloal/introgressionbrowser/gh-pages/virtualization/vbox/09_02_btsync_key.png"/>
-                    <img src="https://raw.githubusercontent.com/sauloal/introgressionbrowser/gh-pages/virtualization/vbox/09_03_btsync_path.png"/>
-                    <br/><span class="thick">Select a path where the data will reside. e.g: d:\ibrowser_data\</span>
+            <h4>Shared Folder</h4>
+            <h3>Download Sample data from <a href="https://github.com/sauloal/introgressionbrowser/wiki/Installation#get-data">Here</a></a></h3>
 
             <h3>Point the data to VBox</h3>
             <img src="https://raw.githubusercontent.com/sauloal/introgressionbrowser/gh-pages/virtualization/vbox/09_04_shared_folders.png"/>
             <br/><span class="thick">Share the folder where the data will reside under the name "DATA". e.g: d:\ibrowser_data\</span>
+            <br/><span class="thick">BEWARE: Sometimes it will change the share name (DATA) to the name of the folder you saved the data. Revert the change</span>
 
-		<h2>Run Machine</h2>
+	    <h2>Run Machine</h2>
             <h3>Run</h3>
-            <img src="https://raw.githubusercontent.com/sauloal/introgressionbrowser/gh-pages/virtualization/vbox/10_run.png"/>
+            Please follow the instructions detailed <a href="https://github.com/sauloal/introgressionbrowser/wiki/Installation#virtualbox">HERE</a>
 
             <h3>Visualization</h3>
-            <br/><span class="thick">It is not necessary to login in order to <u>visualize</u> data.</span> iBrowser will run automatically uppon boot.
-
-                <h4>Browser</h4>
-                <img src="https://raw.githubusercontent.com/sauloal/introgressionbrowser/gh-pages/virtualization/vbox/12_browser.png"/>
-                <br/><span class="thick">Wait 30 seconds after boot. Open your browser (firefox or chrome)</span> and point it to <span class="thick"><a href="http://127.0.0.1:10000">http://127.0.0.1:10000</a></span>
+            <h4>Browser</h4>
+            <img src="https://raw.githubusercontent.com/sauloal/introgressionbrowser/gh-pages/virtualization/vbox/12_browser.png"/>
+            <br/><span class="thick">Wait 30 seconds after boot. Open your browser (firefox or chrome)</span> and point it to <span class="thick"><a href="http://127.0.0.1:10000">http://127.0.0.1:10000</a></span>
 
             <h3>Analysis</h3>
-            <img src="https://raw.githubusercontent.com/sauloal/introgressionbrowser/gh-pages/virtualization/vbox/11_login.png"/>
+            The image will login automatically.
             <br/>Login credentials are <b>Username:</b> ibrowser <b>Pass:</b> ibrowser
             <br/><span class="thick">If you find only a black screen, press Ctrl+Alt+F1</span>
 	</body>
